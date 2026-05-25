@@ -1,0 +1,7 @@
+allowBuilds:
+  core-js: true
+  electron: true
+  esbuild: true
+  protobufjs: true
+minimumReleaseAgeExclude:
+  - '@dvge/runtime-bridge@6.0.0-beta.1'

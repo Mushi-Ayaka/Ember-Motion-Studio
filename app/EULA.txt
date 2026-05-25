@@ -1,0 +1,118 @@
+ACUERDO DE LICENCIA DE USUARIO FINAL (EULA) — Ember Motion Studio v5.9.0+
+
+Por favor, lea atentamente este Acuerdo de Licencia antes de instalar y utilizar el entorno
+Ember Motion Studio y el DVGE (Dynamic Vector Graphics Engine) Runtime Bridge.
+Al proceder con la instalacion, usted acepta quedar vinculado por los terminos de este acuerdo.
+
+Si no acepta estos terminos, NO instale ni use el software.
+
+=========================================================================
+MODELO DE DOBLE LICENCIA
+=========================================================================
+
+Este ecosistema opera bajo un modelo de doble licencia:
+
+A. DVGE (Dynamic Vector Graphics Engine) Runtime Bridge — Licencia MIT
+-----------------------------------------------------------------------
+El puente para el renderizado se distribuye bajo la Licencia MIT:
+
+  MIT License
+  Copyright (c) 2026 Jonatan Baron
+
+  Se concede permiso, de forma gratuita, a cualquier persona que obtenga
+  una copia de este software y los archivos de documentacion asociados,
+  para utilizar el software sin restriccion, incluyendo sin limitacion
+  los derechos de usar, copiar, modificar, fusionar, publicar, distribuir,
+  sublicenciar y/o vender copias del software, y para permitir a las
+  personas a las que se les proporcione el software que lo hagan, sujeto
+  a las siguientes condiciones:
+
+  El aviso de copyright anterior y este aviso de permiso se incluiran
+  en todas las copias o porciones sustanciales del Software.
+
+B. Ember Motion Studio — Licencia Propietaria Comercial
+--------------------------------------------------------
+La suite de escritorio Ember Motion Studio — incluyendo su interfaz,
+modulos propietarios, sistema de gestion de plugins, AI Context Builder
+y todos los flujos de trabajo asociados — NO es de codigo abierto.
+
+  - ESTA PROHIBIDO copiar, redistribuir, aplicar ingenieria inversa,
+    descompilar o desensamblar el software Ember Motion Studio.
+  - ESTA PROHIBIDO sublicenciar o vender acceso al software o sus
+    componentes propietarios.
+  - El uso queda regulado exclusivamente por este EULA.
+  - Todos los derechos de propiedad intelectual pertenecen a Jonatan Baron.
+
+=========================================================================
+1. COMPONENTES DE TERCEROS (REMOTION)
+=========================================================================
+El puente DVGE utiliza Remotion (https://www.remotion.dev) como motor de
+renderizado base. Remotion NO es MIT y esta sujeto a su propia licencia:
+
+  - Gratis: Individuos, sin animo de lucro y empresas de hasta 3 empleados.
+  - Comercial (pago): Empresas que superen ese umbral.
+
+Al usar Ember Motion Studio o el DVGE, usted acepta que:
+  a) El uso de los componentes de Remotion integrados esta sujeto a la
+     Remotion License (https://remotion.dev/license).
+  b) Si su organizacion supera los limites de la version gratuita de
+     Remotion, ES SU RESPONSABILIDAD obtener la licencia comercial
+     correspondiente directamente de Remotion.
+  c) Jonatan Baron no otorga, ni pretende otorgar, ninguna sublicencia
+     sobre el nucleo de Remotion que contravenga sus terminos originales.
+
+=========================================================================
+2. EXENCION DE GARANTIAS ("AS IS")
+=========================================================================
+EL SOFTWARE SE PROPORCIONA "TAL CUAL", SIN GARANTIA DE NINGUN TIPO,
+EXPRESA O IMPLICITA, INCLUYENDO PERO NO LIMITADO A LAS GARANTIAS DE
+COMERCIABILIDAD, IDONEIDAD PARA UN PROPOSITO PARTICULAR Y NO INFRACCION.
+
+Como desarrollador independiente, Jonatan Baron no garantiza que el
+software funcione sin interrupciones o este libre de errores,
+especialmente en entornos de produccion critica o transmisiones en vivo.
+
+=========================================================================
+3. LIMITACION DE RESPONSABILIDAD
+=========================================================================
+EN NINGUN CASO EL AUTOR (JONATAN BARON) SERA RESPONSABLE POR CUALQUIER
+RECLAMACION, DANO U OTRA RESPONSABILIDAD, YA SEA EN UNA ACCION DE
+CONTRATO, AGRAVIO O DE OTRO TIPO, QUE SURJA DE, FUERA DE O EN CONEXION
+CON EL SOFTWARE O EL USO U OTROS TRATOS EN EL SOFTWARE.
+
+EL USUARIO ASUME TODA LA RESPONSABILIDAD POR LOS RIESGOS DERIVADOS DEL
+USO DE EMBER MOTION STUDIO Y DVGE EN FLUJOS DE TRABAJO PROFESIONALES.
+
+=========================================================================
+4. PRIVACIDAD Y DATOS
+=========================================================================
+Ember Motion Studio es una aplicacion Local-First. Sus proyectos, assets
+y contenido generado se almacenan exclusivamente en su
+maquina y no son enviados a servidores externos sin su consentimiento
+explicito. Cualquier telemetria recopilada es anonima y opt-out.
+
+Al usar el AI Context Builder, los datos de su proyecto son procesados
+por el proveedor de IA que usted configure y estan sujetos a la politica
+de privacidad de dicho proveedor.
+
+=========================================================================
+5. PROPIEDAD INTELECTUAL
+=========================================================================
+Todos los derechos de propiedad intelectual sobre Ember Motion Studio
+— incluyendo su codigo fuente propietario, diseno, interfaz, algoritmos
+y marca — son propiedad exclusiva de Jonatan Baron.
+
+El uso del DVGE Runtime Bridge (MIT) no le otorga ningun derecho sobre
+los componentes propietarios de Ember Motion Studio.
+
+=========================================================================
+6. CONTACTO LEGAL
+=========================================================================
+Para consultas legales, notificaciones de infraccion, avisos DMCA o
+dudas sobre licencias, contactar a: barojonatan8@gmail.com
+
+-------------------------------------------------------------------------
+Copyright (c) 2026 Jonatan Baron. Todos los derechos reservados.
+Ember Motion Studio es software propietario.
+DVGE Runtime Bridge esta licenciado bajo MIT.
+-------------------------------------------------------------------------

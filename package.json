@@ -1,0 +1,10 @@
+{
+  "private": true,
+  "packageManager": "pnpm@9.0.0",
+  "scripts": {
+    "dev": "cd app && pnpm run dev",
+    "build": "cd app && pnpm run build",
+    "lint": "cd app && pnpm run lint",
+    "preview": "cd app && pnpm run preview"
+  }
+}

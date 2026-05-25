@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Developer Docs - Ember Motion Studio</title>
+    <style>
+      :root{--bg:#0f1720;--panel:#0b1220;--accent:#7dd3fc;--text:#e6eef6}
+      body{margin:0;font-family:Inter,Segoe UI,Arial;background:var(--bg);color:var(--text);height:100vh;display:flex}
+      nav{width:280px;background:var(--panel);padding:16px;box-sizing:border-box;overflow:auto}
+      main{flex:1;padding:20px;overflow:auto}
+      a.file{display:block;padding:8px 10px;margin-bottom:6px;color:var(--text);text-decoration:none;border-radius:6px}
+      a.file:hover{background:#071021}
+      header{font-weight:700;margin-bottom:12px}
+      .content{background:#071526;padding:20px;border-radius:8px}
+      pre, code{background:#021018;color:#8ee0ff}
+      .md-title{color:var(--accent);font-size:20px;margin:0 0 12px}
+    </style>
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+  </head>
+  <body>
+    <nav>
+      <header>Documentación de Desarrollo</header>
+      <div id="file-list">Cargando...</div>
+    </nav>
+    <main>
+      <div id="doc">
+        <h2 class="md-title">Selecciona un archivo</h2>
+        <div class="content" id="content">No hay contenido aún.</div>
+      </div>
+    </main>
+
+    <script>
+      async function loadManifest(){
+        try{
+          const res = await fetch('manifest.json');
+          if(!res.ok) throw new Error('No se pudo leer manifest.json');
+          return await res.json();
+        }catch(e){
+          document.getElementById('file-list').innerText = 'Error cargando manifest.json';
+          console.error(e);
+        }
+      }
+
+      function makeLink(name){
+        const a = document.createElement('a');
+        a.className = 'file';
+        a.href = '#'+name;
+        a.innerText = name.replace(/^md\//,'');
+        a.onclick = (ev)=>{ ev.preventDefault(); loadFile(name); };
+        return a;
+      }
+
+      async function loadFile(path){
+        const contentEl = document.getElementById('content');
+        try{
+          const res = await fetch(path);
+          if(!res.ok) throw new Error('No se pudo cargar '+path);
+          const md = await res.text();
+          contentEl.innerHTML = marked.parse(md);
+        }catch(e){
+          contentEl.innerText = 'Error cargando archivo: '+e.message;
+          console.error(e);
+        }
+      }
+
+      (async ()=>{
+        const manifest = await loadManifest();
+        const list = document.getElementById('file-list');
+        list.innerHTML = '';
+        if(!manifest || !manifest.files) { list.innerText = 'No hay archivos listados en manifest.json'; return; }
+        manifest.files.forEach(f=> list.appendChild(makeLink(f)));
+        // Load first file by default
+        if(manifest.files.length) loadFile(manifest.files[0]);
+      })();
+    </script>
+  </body>
+</html>
