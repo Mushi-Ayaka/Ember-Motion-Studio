@@ -32,4 +32,7 @@ archives/
 # Temporary files
 *.tmp
 *.temp
-app/scratch/
+app/scratch/
+
+# Building
+release/
