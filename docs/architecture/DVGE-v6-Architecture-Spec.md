@@ -1,8 +1,8 @@
-# Ember Motion Studio — Especificación de Arquitectura v6.0.0 (Roadmap)
+# Ember Motion Studio™ — Especificación de Arquitectura v6.0.0 (Roadmap)
 
 ## Visión: "El Motor de Orquestación Gráfica Inteligente"
 
-Este documento consolida la visión estratégica y los requerimientos técnicos para Ember Motion Studio.
+Este documento consolida la visión estratégica y los requerimientos técnicos para Ember Motion Studio™.
 
 ---
 
@@ -22,7 +22,7 @@ Ember evoluciona hacia un **Ecosistema de Trabajo Contextual** basado en 5 pasos
 
 ### Fase 1: Estabilización & Marca (Completado)
 
-* ✅ Re-branding de DVGE a **Ember Motion Studio**.
+* ✅ Re-branding de DVGE a **Ember Motion Studio™**.
 * ✅ Protocolo de Posicionamiento Responsivo (v6.7.3).
 * ✅ Auditoría de Calidad de Píxeles.
 * ✅ Integración de Tutoriales y Guías de Flujo Maestro.
@@ -32,4 +32,8 @@ Ember evoluciona hacia un **Ecosistema de Trabajo Contextual** basado en 5 pasos
 
 **Documento Actualizado por**: Antigravity (Senior AI Architect)
 **Fecha**: 2026-05-04
-**Estado**: v5.9.0 STABLE - Final Sprint towards v6.0.0
+**Estado**: v5.9.0 STABLE (histórico; la versión actual es v5.9.1) - Final Sprint towards v6.0.0
+
+---
+
+*Distribución: Ember Motion Studio™ se distribuye bajo Licencia MIT (ver `docs/legal/LEGAL.md`); DVGE no lleva ™ y actúa como puente orquestador sobre Remotion. Documento histórico preservado; sin planes comerciales cerrados vigentes.*

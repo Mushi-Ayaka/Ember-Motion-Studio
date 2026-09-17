@@ -1,118 +1,70 @@
-ACUERDO DE LICENCIA DE USUARIO FINAL (EULA) — Ember Motion Studio v5.9.0+
+LICENCIA Y AVISOS — Ember Motion Studio™ v5.9.1
 
-Por favor, lea atentamente este Acuerdo de Licencia antes de instalar y utilizar el entorno
-Ember Motion Studio y el DVGE (Dynamic Vector Graphics Engine) Runtime Bridge.
-Al proceder con la instalacion, usted acepta quedar vinculado por los terminos de este acuerdo.
+El código y la documentación originales de Ember Motion Studio™ se publican
+bajo MIT. Este aviso sustituye las restricciones propietarias anteriores para
+esta distribución. No añade condiciones a MIT: permite uso comercial, copia,
+modificación, distribución y venta conservando sus avisos. El texto íntegro
+está abajo y en LICENSE. Los componentes de terceros conservan sus licencias.
 
-Si no acepta estos terminos, NO instale ni use el software.
+MARCA Y ARQUITECTURA
+Ember Motion Studio™ es una marca no registrada reivindicada por Jonatan Barón.
+™ no registra la marca, no certifica disponibilidad del nombre y no evita
+reclamaciones de terceros. MIT concede permisos sobre el código, no aval
+oficial ni derechos de marca. Esto no limita referencias legítimas al proyecto
+ni los permisos de MIT. No se debe confundir un derivado con una edición oficial.
 
-=========================================================================
-MODELO DE DOBLE LICENCIA
-=========================================================================
+DVGE (Dynamic Vector Graphics Engine) es un nombre técnico descriptivo, sin
+reivindicación de marca. Es un puente/orquestador entre la interfaz React/Electron
+y el renderizado actual con Remotion. Coordina propiedades, fotogramas y gráficos
+HTML/CSS/JS en un DOM controlado mediante Shadow DOM y fakeWindow. Estas capas
+no constituyen una máquina virtual ni garantizan aislamiento de código hostil.
+Otros motores requerirían integraciones adicionales; no se anuncian implementados.
 
-Este ecosistema opera bajo un modelo de doble licencia:
+TERCEROS
+Remotion no se relicencia bajo MIT. Su licencia permite crear vídeos e imágenes,
+incluso comerciales, gratuitamente a individuos, organizaciones sin fines de
+lucro y empresas de hasta tres empleados que cumplan sus términos. Otras
+organizaciones necesitan Company License. La Free License restringe copiar o
+modificar Remotion para vender, alquilar, licenciar o sublicenciar un derivado
+propio de Remotion. Los permisos MIT sobre nuestro código no anulan estos términos
+ni autorizan automáticamente cualquier redistribución de un paquete con Remotion.
+Consulte la licencia aplicable a la versión utilizada: https://www.remotion.dev/license
+Electron, React, Chromium, FFmpeg y otras dependencias conservan sus avisos y
+obligaciones; las condiciones de FFmpeg dependen de la compilación distribuida.
 
-A. DVGE (Dynamic Vector Graphics Engine) Runtime Bridge — Licencia MIT
------------------------------------------------------------------------
-El puente para el renderizado se distribuye bajo la Licencia MIT:
+PRIVACIDAD Y CONTENIDO
+Los proyectos se guardan localmente. Una build configurada con PostHog o Sentry
+puede enviar automáticamente diagnósticos, métricas y datos de hardware con un
+identificador persistente seudónimo. No se garantiza anonimato total ni existe
+actualmente un control de opt-out en la interfaz. Descargas, catálogo y consultas
+de actualización también requieren conexiones externas. Consulte LEGAL.md o
+LEGAL_en.md para más detalles. AI Context Builder prepara contexto local para
+compartirlo con una IA externa: revise lo que decide enviar y sus términos.
+Revise plugins y código generado antes de ejecutarlos.
 
-  MIT License
-  Copyright (c) 2026 Jonatan Baron
+LICENCIA MIT (TEXTO ÍNTEGRO)
 
-  Se concede permiso, de forma gratuita, a cualquier persona que obtenga
-  una copia de este software y los archivos de documentacion asociados,
-  para utilizar el software sin restriccion, incluyendo sin limitacion
-  los derechos de usar, copiar, modificar, fusionar, publicar, distribuir,
-  sublicenciar y/o vender copias del software, y para permitir a las
-  personas a las que se les proporcione el software que lo hagan, sujeto
-  a las siguientes condiciones:
+MIT License
 
-  El aviso de copyright anterior y este aviso de permiso se incluiran
-  en todas las copias o porciones sustanciales del Software.
+Copyright (c) 2026 Jonatan Barón
 
-B. Ember Motion Studio — Licencia Propietaria Comercial
---------------------------------------------------------
-La suite de escritorio Ember Motion Studio — incluyendo su interfaz,
-modulos propietarios, sistema de gestion de plugins, AI Context Builder
-y todos los flujos de trabajo asociados — NO es de codigo abierto.
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
 
-  - ESTA PROHIBIDO copiar, redistribuir, aplicar ingenieria inversa,
-    descompilar o desensamblar el software Ember Motion Studio.
-  - ESTA PROHIBIDO sublicenciar o vender acceso al software o sus
-    componentes propietarios.
-  - El uso queda regulado exclusivamente por este EULA.
-  - Todos los derechos de propiedad intelectual pertenecen a Jonatan Baron.
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
 
-=========================================================================
-1. COMPONENTES DE TERCEROS (REMOTION)
-=========================================================================
-El puente DVGE utiliza Remotion (https://www.remotion.dev) como motor de
-renderizado base. Remotion NO es MIT y esta sujeto a su propia licencia:
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
 
-  - Gratis: Individuos, sin animo de lucro y empresas de hasta 3 empleados.
-  - Comercial (pago): Empresas que superen ese umbral.
-
-Al usar Ember Motion Studio o el DVGE, usted acepta que:
-  a) El uso de los componentes de Remotion integrados esta sujeto a la
-     Remotion License (https://remotion.dev/license).
-  b) Si su organizacion supera los limites de la version gratuita de
-     Remotion, ES SU RESPONSABILIDAD obtener la licencia comercial
-     correspondiente directamente de Remotion.
-  c) Jonatan Baron no otorga, ni pretende otorgar, ninguna sublicencia
-     sobre el nucleo de Remotion que contravenga sus terminos originales.
-
-=========================================================================
-2. EXENCION DE GARANTIAS ("AS IS")
-=========================================================================
-EL SOFTWARE SE PROPORCIONA "TAL CUAL", SIN GARANTIA DE NINGUN TIPO,
-EXPRESA O IMPLICITA, INCLUYENDO PERO NO LIMITADO A LAS GARANTIAS DE
-COMERCIABILIDAD, IDONEIDAD PARA UN PROPOSITO PARTICULAR Y NO INFRACCION.
-
-Como desarrollador independiente, Jonatan Baron no garantiza que el
-software funcione sin interrupciones o este libre de errores,
-especialmente en entornos de produccion critica o transmisiones en vivo.
-
-=========================================================================
-3. LIMITACION DE RESPONSABILIDAD
-=========================================================================
-EN NINGUN CASO EL AUTOR (JONATAN BARON) SERA RESPONSABLE POR CUALQUIER
-RECLAMACION, DANO U OTRA RESPONSABILIDAD, YA SEA EN UNA ACCION DE
-CONTRATO, AGRAVIO O DE OTRO TIPO, QUE SURJA DE, FUERA DE O EN CONEXION
-CON EL SOFTWARE O EL USO U OTROS TRATOS EN EL SOFTWARE.
-
-EL USUARIO ASUME TODA LA RESPONSABILIDAD POR LOS RIESGOS DERIVADOS DEL
-USO DE EMBER MOTION STUDIO Y DVGE EN FLUJOS DE TRABAJO PROFESIONALES.
-
-=========================================================================
-4. PRIVACIDAD Y DATOS
-=========================================================================
-Ember Motion Studio es una aplicacion Local-First. Sus proyectos, assets
-y contenido generado se almacenan exclusivamente en su
-maquina y no son enviados a servidores externos sin su consentimiento
-explicito. Cualquier telemetria recopilada es anonima y opt-out.
-
-Al usar el AI Context Builder, los datos de su proyecto son procesados
-por el proveedor de IA que usted configure y estan sujetos a la politica
-de privacidad de dicho proveedor.
-
-=========================================================================
-5. PROPIEDAD INTELECTUAL
-=========================================================================
-Todos los derechos de propiedad intelectual sobre Ember Motion Studio
-— incluyendo su codigo fuente propietario, diseno, interfaz, algoritmos
-y marca — son propiedad exclusiva de Jonatan Baron.
-
-El uso del DVGE Runtime Bridge (MIT) no le otorga ningun derecho sobre
-los componentes propietarios de Ember Motion Studio.
-
-=========================================================================
-6. CONTACTO LEGAL
-=========================================================================
-Para consultas legales, notificaciones de infraccion, avisos DMCA o
-dudas sobre licencias, contactar a: barojonatan8@gmail.com
-
--------------------------------------------------------------------------
-Copyright (c) 2026 Jonatan Baron. Todos los derechos reservados.
-Ember Motion Studio es software propietario.
-DVGE Runtime Bridge esta licenciado bajo MIT.
--------------------------------------------------------------------------
+Fuente: https://github.com/Mushi-Ayaka/Ember-Motion-Studio
+Contacto: barojonatan8@gmail.com

@@ -38,7 +38,7 @@ export const AboutModal: React.FC = () => {
                         <img src="logo-square.png" alt="DVGE Studio" style={{ width: '48px', height: '48px' }} />
                         <div>
                             <h2 style={{ margin: 0, fontSize: '18px', color: 'white', fontFamily: 'Outfit, sans-serif', textTransform: 'uppercase', letterSpacing: '1px' }}>
-                                Ember Motion Studio
+                                Ember Motion Studio™
                             </h2>
                             <span style={{ color: 'var(--accent)', fontSize: '11px', fontWeight: 'bold', fontFamily: 'Fira Code, monospace' }}>
                                 [DVGE]-[v{APP_VERSION}]-[{BUILD_DATE}]
@@ -55,6 +55,8 @@ export const AboutModal: React.FC = () => {
 
                 <div style={{ fontSize: '13px', color: 'var(--text-secondary)', lineHeight: '1.6', fontFamily: 'Fira Sans, sans-serif' }}>
                     <p>{t('about_studio')}</p>
+                    <p>{t('about_license')}</p>
+                    <p>{t('about_trademark')}</p>
 
                     <div style={{ marginTop: '20px', padding: '15px', background: 'rgba(0,0,0,0.2)', border: '1px solid rgba(255,255,255,0.05)' }}>
                         <div style={{ display: 'flex', justifyContent: 'space-between', marginBottom: '8px' }}>
@@ -68,7 +70,7 @@ export const AboutModal: React.FC = () => {
                     </div>
 
                     <div style={{ marginTop: '20px', display: 'flex', gap: '15px', flexWrap: 'wrap' }}>
-                        <a href="https://github.com/Mushi-Ayaka/Dynamic-Vector-Graphics-Engine--DVGE-" target="_blank" rel="noopener" style={{ display: 'flex', alignItems: 'center', gap: '5px', color: 'var(--text-secondary)', textDecoration: 'none', fontSize: '11px', fontWeight: 'bold' }}>
+                        <a href="https://github.com/Mushi-Ayaka/Ember-Motion-Studio" target="_blank" rel="noopener" style={{ display: 'flex', alignItems: 'center', gap: '5px', color: 'var(--text-secondary)', textDecoration: 'none', fontSize: '11px', fontWeight: 'bold' }}>
                             <ExternalLink size={13} /> {t('github')}
                         </a>
                         <a href="https://portafolio-jonatan-baron.vercel.app/" target="_blank" rel="noopener" style={{ display: 'flex', alignItems: 'center', gap: '5px', color: 'var(--text-secondary)', textDecoration: 'none', fontSize: '11px', fontWeight: 'bold' }}>

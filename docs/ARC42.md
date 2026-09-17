@@ -1,10 +1,10 @@
-# Documentación Arc42 — Ember Motion Studio v5.9.0
+# Documentación Arc42 — Ember Motion Studio™ v5.9.0
 
 ## 1. Introducción y Objetivos
 
 ### 1.1 Propósito del Sistema
 
-**Ember Motion Studio** es un estudio de animación broadcast de escritorio que permite crear, previsualizar y exportar gráficos profesionales para televisión (lower thirds, barras de datos, títulos animados, etc.) con canal alfa (transparencia nativa).
+**Ember Motion Studio™** es un estudio de animación broadcast de escritorio que permite crear, previsualizar y exportar gráficos profesionales para televisión (lower thirds, barras de datos, títulos animados, etc.) con canal alfa (transparencia nativa).
 
 El sistema combina:
 
@@ -50,7 +50,7 @@ El sistema combina:
 
 ```mermaid
 graph TB
-    subgraph "Ember Motion Studio"
+    subgraph "Ember Motion Studio™"
         App[App Electron]
     end
 
@@ -82,7 +82,7 @@ graph TB
 - Exportación de video en múltiples formatos profesionales
 - Generación de contexto para IA (PDF)
 - Gestión de proyectos (CRUD)
-- Telemetría anónima (PostHog + HardwareScanner)
+- Telemetría con ID seudónimo persistente y datos de hardware, condicionada a la configuración de PostHog y/o Sentry en cada build; no garantiza anonimato total
 
 **Fuera del alcance:**
 
@@ -198,7 +198,7 @@ graph TB
 | `dependency-manager.ts` | Asegura que Chromium esté instalado para render headless |
 | `preload.ts` | Bridge seguro via `contextBridge`. Expone ~30 métodos IPC |
 | `telemetry/TelemetryHub.ts` | Inicializa y gestiona PostHog (lado main) |
-| `telemetry/MachineIdentityProvider.ts` | ID anónimo de máquina |
+| `telemetry/MachineIdentityProvider.ts` | ID seudónimo de máquina |
 | `telemetry/HardwareScanner.ts` | Escanea GPU/CPU/RAM usando `systeminformation` |
 | `resources/MASTER_PROMPT.md` | Prompt maestro del motor DVGE (560 líneas) |
 | `resources/visualSkills.ts` | Habilidades visuales deterministas (presets de estilo) |
@@ -599,10 +599,10 @@ dvEngine.register({
 
 ### 8.7 Telemetría
 
-- **Renderer**: PostHog JS (`posthog-js`) para eventos de UI
-- **Main**: TelemetryHub + MachineIdentityProvider + HardwareScanner
-- **Identidad**: ID anónimo de máquina (no PII)
-- **Hardware**: GPU, CPU, RAM escaneados con `systeminformation`
+- **Renderer**: PostHog JS (`posthog-js`) para eventos de UI (solo si la build incluye su configuración)
+- **Main**: TelemetryHub + MachineIdentityProvider + HardwareScanner (solo si la build incluye su configuración)
+- **Identidad**: ID seudónimo de máquina (hash; sin PII directa, pero no garantiza anonimato total; véase `app/LEGAL.md`)
+- **Hardware**: GPU, CPU, RAM escaneados con `systeminformation` según integraciones configuradas
 
 ---
 
@@ -634,7 +634,7 @@ dvEngine.register({
 
 - No se ejecuta código arbitrario del usuario fuera del sandbox
 - Los plugins no tienen acceso al sistema de archivos ni a la red
-- Telemetría anónima sin datos personales
+- Telemetría con ID seudónimo de máquina (sin PII directa; no garantiza anonimato total; véase `app/LEGAL.md`)
 
 ### 10.3 Escalabilidad
 

@@ -1,0 +1,8 @@
+node_modules
+dist
+dist-electron
+remotion-bundle
+release
+.git
+.gitignore
+*.log

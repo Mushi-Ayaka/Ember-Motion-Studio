@@ -109,7 +109,7 @@ export const translations = {
     new_project_placeholder: "Nombre del proyecto...",
 
     // Quick Guide
-    guide_welcome: "¡Bienvenido a Ember Motion Studio!",
+    guide_welcome: "¡Bienvenido a Ember Motion Studio™!",
     guide_welcome_desc: "Esta guía te enseñará a dominar el flujo de trabajo profesional en 2 minutos.",
     guide_left: "Panel de Control (Izquierda)",
     guide_left_desc: "En el canvas puedes definir las dimensiones, la duración y los FPS de la animación. En la parte inferior tendrás las reglas para arrastrar a tu chat de IA para pedirle la animación que deseas, más abajo tendrás los campos para colocar el código HTML, CSS y JS. Al final está el botón para renderizar a video.",
@@ -243,7 +243,9 @@ export const translations = {
     min_label: "Mín",
     max_label: "Máx",
     step_label: "Paso",
-    about_studio: "El entorno para la generación de gráficos broadcast dinámicos. introduce un sistema de renderizado determinista de alta fidelidad impulsado por el motor Ember, diseñado para entornos de producción real.",
+    about_studio: "Ember Motion Studio™ es la interfaz React/Electron para crear gráficos HTML, CSS y JS. DVGE (Dynamic Vector Graphics Engine) es el puente que coordina las propiedades y los fotogramas con Remotion en un DOM controlado. Shadow DOM y fakeWindow no constituyen una máquina virtual de seguridad; otros motores requerirían nuevas integraciones.",
+    about_license: "Código y documentación propios: MIT, incluido uso comercial, modificación y redistribución con sus avisos. Remotion y demás dependencias conservan sus propias licencias; no todo el paquete es MIT.",
+    about_trademark: "Ember Motion Studio™ es una marca no registrada reivindicada por Jonatan Barón. ™ no registra el nombre ni garantiza su disponibilidad o protección frente a demandas. MIT no concede aval oficial. DVGE es un término técnico descriptivo, sin reivindicación de marca.",
     technical_docs: "Documentación Técnica",
     plugin_policy: "Política de Plugins",
     legal_notice: "Aviso Legal",
@@ -264,7 +266,7 @@ export const translations = {
     loading_dvge: "Iniciando Ember",
 
     // Welcome Guide
-    welcome_title: "Bienvenido a Ember Motion Studio",
+    welcome_title: "Bienvenido a Ember Motion Studio™",
     welcome_guide: "Guía de Bienvenida",
     welcome_desc: "Ember es tu nuevo espacio de trabajo para animaciones basadas en HTML, CSS y JS para producción, con alta calidad y broadcast-grade.",
     smartscreen_title: "Sobre la advertencia de Windows (SmartScreen)",
@@ -274,7 +276,7 @@ export const translations = {
 
     // Workflow Modal
     workflow_title: "Flujo Recomendado de Trabajo",
-    workflow_desc: "Domina Ember Motion Studio siguiendo estos pasos clave.",
+    workflow_desc: "Domina Ember Motion Studio™ siguiendo estos pasos clave.",
     workflow_step1_title: "1. Configuración del Canvas",
     workflow_step1_desc: "Define dimensiones, duración y FPS para establecer la base técnica de tu video.",
     workflow_step2_title: "2. Gestión de Artefactos",
@@ -289,7 +291,7 @@ export const translations = {
     workflow_start_btn: "Entendido, ¡Comenzar!",
 
     // Tutorial Studio
-    tut_studio_title: "Introducción a Ember Motion Studio",
+    tut_studio_title: "Introducción a Ember Motion Studio™",
     tut_studio_desc: "¡Bienvenido! En este breve recorrido conocerás los fundamentos para crear y exportar tu primera animación.",
     tut_canvas_title: "1. Panel Canvas",
     tut_canvas_desc: "En este panel defines las propiedades fundamentales del lienzo.",
@@ -459,7 +461,7 @@ export const translations = {
     new_project_placeholder: "Project name...",
 
     // Quick Guide
-    guide_welcome: "Welcome to Ember Motion Studio!",
+    guide_welcome: "Welcome to Ember Motion Studio™!",
     guide_welcome_desc: "This guide will teach you how to master the professional workflow in 2 minutes.",
     guide_left: "Control Panel (Left)",
     guide_left_desc: "In the canvas you can define dimensions, duration, and FPS of the animation. Below you will find the rules to drag to your AI chat to request your animation, and further down the fields for HTML, CSS, and JS code. Finally, the button to render to video.",
@@ -593,7 +595,9 @@ export const translations = {
     min_label: "Min",
     max_label: "Max",
     step_label: "Step",
-    about_studio: "The environment for generating dynamic broadcast graphics. introduces a high-fidelity deterministic rendering system powered by the Ember engine, designed for real production environments.",
+    about_studio: "Ember Motion Studio™ is the React/Electron interface for creating HTML, CSS and JS graphics. DVGE (Dynamic Vector Graphics Engine) bridges properties and frames with Remotion in a controlled DOM. Shadow DOM and fakeWindow are not a security virtual machine; other engines would require new integrations.",
+    about_license: "Original code and documentation: MIT, including commercial use, modification and redistribution with its notices. Remotion and other dependencies retain their own licenses; not the entire bundle is MIT.",
+    about_trademark: "Ember Motion Studio™ is an unregistered trademark claimed by Jonatan Barón. ™ does not register the name or guarantee its availability or protection against claims. MIT does not grant official endorsement. DVGE is a descriptive technical term, without a trademark claim.",
     technical_docs: "Technical Documentation",
     plugin_policy: "Plugin Policy",
     legal_notice: "Legal Notice",
@@ -614,7 +618,7 @@ export const translations = {
     loading_dvge: "Starting Ember",
 
     // Welcome Guide
-    welcome_title: "Welcome to Ember Motion Studio",
+    welcome_title: "Welcome to Ember Motion Studio™",
     welcome_guide: "Welcome Guide",
     welcome_desc: "Ember is your new workspace for production HTML, CSS, and JS animations, with high-quality and broadcast-grade output.",
     smartscreen_title: "About the Windows Warning (SmartScreen)",
@@ -624,7 +628,7 @@ export const translations = {
 
     // Workflow Modal
     workflow_title: "Recommended Workflow",
-    workflow_desc: "Master Ember Motion Studio by following these key steps.",
+    workflow_desc: "Master Ember Motion Studio™ by following these key steps.",
     workflow_step1_title: "1. Canvas Configuration",
     workflow_step1_desc: "Define dimensions, duration, and FPS to set the technical foundation for your video.",
     workflow_step2_title: "2. Artifact Management",
@@ -639,7 +643,7 @@ export const translations = {
     workflow_start_btn: "Got it, Start!",
 
     // Tutorial Studio
-    tut_studio_title: "Introduction to Ember Motion Studio",
+    tut_studio_title: "Introduction to Ember Motion Studio™",
     tut_studio_desc: "Welcome! In this brief tour, you will learn the fundamentals to create and export your first animation.",
     tut_canvas_title: "1. Canvas Panel",
     tut_canvas_desc: "In this panel, you define the fundamental properties of the canvas.",

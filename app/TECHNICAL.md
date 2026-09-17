@@ -1,18 +1,18 @@
-# Documentación Técnica: Ember Motion Studio v5.9.0
+# Documentación Técnica: Ember Motion Studio™ v5.9.1
 
 ## Introducción
 
-El **Ember Motion Studio v5.9.0** es un entorno de producción impulsado por el motor **DVGE**. Su arquitectura está diseñada para la orquestación de gráficos broadcast asistidos por IA, garantizando un renderizado de alta fidelidad con transparencia nativa.
+El **Ember Motion Studio™ v5.9.1** es un entorno de producción impulsado por el motor **DVGE**. Su arquitectura está diseñada para la orquestación de gráficos broadcast asistidos por IA, garantizando un renderizado de alta fidelidad con transparencia nativa.
 
 ---
 
 ## 1. Arquitectura de Orquestación
 
-El sistema utiliza un modelo de ejecución dual (Main y Renderer) que separa la lógica de interfaz del procesamiento de video pesado.
+El sistema utiliza un modelo de ejecución dual (Main y Renderer) que separa la lógica de interfaz del procesamiento de video pesado. DVGE actúa como **puente orquestador** sobre el runtime de renderizado **Remotion**, con la interfaz construida en React sobre Electron y el aislamiento de plugins mediante Shadow DOM.
 
 ### 1.1 AI Context Builder (Knowledge Bridge)
 
-Es el componente central de la v5.9.0. El motor genera dinámicamente un manual técnico (PDF) que contiene:
+Es el componente central de la v5.9.1. El motor genera dinámicamente un manual técnico (PDF) que contiene:
 
 - El esquema de la API de DVGE.
 - La descripción de los artefactos de usuario.
@@ -33,7 +33,7 @@ El sistema de propiedades (Inspector) se ha rediseñado para permitir la vincula
 
 ### 2.2 Seguridad (Sandbox Shadow DOM)
 
-Cada plugin se ejecuta dentro de un **Shadow Root** aislado con un proxy `fakeWindow`. Esto previene colisiones de estilos CSS y asegura que el código generado por la IA no tenga acceso a APIs críticas del sistema host.
+Cada plugin se ejecuta dentro de un **Shadow Root** aislado con un proxy `fakeWindow`. Esto previene colisiones de estilos CSS y limita el acceso del código generado por la IA a APIs críticas del sistema host. El Sandbox es una capa de contención que reduce riesgos; **no garantiza seguridad absoluta** frente a código malicioso.
 
 ---
 
@@ -53,4 +53,4 @@ Aplica inyecciones de estilo a nivel de motor antes de cada captura de cuadro pa
 
 ## 4. Evolución hacia v6.0
 
-El motor v5.9.0 sirve como base estable para la transición a un modelo de **Extensiones Modulares**, donde las herramientas del Studio (como el cropper o los editores de datos) serán componentes desacoplados y ampliables.
+El motor v5.9.1 sirve como base estable para la transición a un modelo de **Extensiones Modulares**, donde las herramientas del Studio (como el cropper o los editores de datos) serán componentes desacoplados y ampliables.

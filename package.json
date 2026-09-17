@@ -1,5 +1,6 @@
 {
   "private": true,
+  "license": "MIT",
   "packageManager": "pnpm@9.0.0",
   "scripts": {
     "dev": "cd app && pnpm run dev",

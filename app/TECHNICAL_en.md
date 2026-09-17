@@ -1,8 +1,8 @@
-# Technical Documentation: Ember Motion Studio v5.8
+# Technical Documentation: Ember Motion Studio™ v5.9.1
 
 ## Introduction
 
-**Ember Motion Studio v5.8** is an audiovisual production environment powered by the **DVGE** engine, designed for the creation, preview, and export of broadcast graphics. Its core is optimized to generate video files with native transparency (Alpha channel) ready for professional workflows in film and television.
+**Ember Motion Studio™ v5.9.1** is an audiovisual production environment powered by the **DVGE** engine, designed for the creation, preview, and export of broadcast graphics. Its core is optimized to generate video files with native transparency (Alpha channel) ready for professional workflows in film and television.
 
 ---
 
@@ -14,7 +14,7 @@ The system uses a distributed execution model that ensures visual determinism an
 
 The engine separates the user interface from the heavy rendering logic. This allows for smooth previews at 60fps while the backend manages data persistence and video encoding in the background.
 
-### 1.2 Isolation and Rendering (v5.8)
+### 1.2 Isolation and Rendering (v5.9.1)
 
 - **Style Capsule**: Plugins operate in isolated environments to avoid visual conflicts with the Studio.
 - **Determinism**: The engine controls the animation clock frame by frame, ensuring that the preview is identical to the exported video bit by bit.

@@ -1,3 +1,12 @@
+## [5.9.1] - 2026-09-17 (Pendiente de publicación)
+### Legal & Documentation
+- **Unificación de licencia MIT**: La documentación legal (LEGAL, PLUGIN_POLICY en ES/EN) ahora describe un modelo **MIT único sin restricciones adicionales**: se permite usar, copiar, modificar, distribuir, sublicenciar y vender copias del software. Se eliminan las cláusulas de licencia propietaria, cesión de derechos de contribuciones y términos comerciales restrictivos de los documentos legales.
+- **Marca separada del copyright**: "Ember Motion Studio™" se documenta como marca no registrada reivindicada (™) de Jonatan Barón, explícitamente separada del copyright MIT del código. La marca no está registrada, no otorga derechos exclusivos registrados ni garantiza protección frente a demandas; los forks conservan el aviso de copyright pero el nombre comercial no se cede con la licencia.
+- **Remotion bajo su propia licencia**: Documentación legal aclarada — Remotion no es MIT y conserva su licencia dual propia (gratuita para individuos, sin fines de lucro y empresas de hasta 3 empleados, incluido uso comercial de videos; Company License para organizaciones mayores). Ember Motion Studio™ no re-licencia ni sublicencia Remotion.
+- **Transparencia de telemetría**: La sección de privacidad condiciona el envío automático desde el inicio a la configuración de PostHog y/o Sentry incluida en cada build. Describe un ID seudónimo persistente, datos de hardware y posibles diagnósticos identificables, sin prometer anonimato total ni un opt-out integrado.
+- **Documentación actualizada a v5.9.1**: README, manuales técnico y de usuario alineados a la versión 5.9.1 (el histórico de 5.9.0 y anteriores se preserva intacto).
+- **Retirada del modelo comercial propietario**: Los planes de tiers PRO/Enterprise y monetización por suscripción se marcan como retirados en la documentación estratégica; el proyecto permanece MIT sin planes cerrados presentados como vigentes. Se documentan vías opcionales de sostenimiento (donaciones y soporte del autor) sin restricciones adicionales sobre la licencia MIT.
+
 ## [5.6.0] - 2026-04-26
 ### Project Lifecycle & Render Stability
 - **Gestión Completa de Proyectos**: Implementación de un nuevo sistema de administración en la Galería (Home Menu) que permite **Renombrar** y **Eliminar** proyectos de forma segura a través de una ventana de ajustes (`ProjectSettingsModal`).

@@ -80,7 +80,7 @@ export const UpdateModal: React.FC<UpdateModalProps> = ({ isOpen, releaseNotes, 
         {/* Content */}
         <div style={{ padding: '24px', background: 'var(--bg-secondary)' }}>
           <p style={{ margin: '0 0 16px 0', fontSize: '12px', color: 'var(--text-secondary)', lineHeight: '1.5' }}>
-            Hay una nueva versión de Ember Motion Studio lista. Te recomendamos actualizar para disfrutar de las últimas mejoras y correcciones de estabilidad.
+            Hay una nueva versión de Ember Motion Studio™ lista. Te recomendamos actualizar para disfrutar de las últimas mejoras y correcciones de estabilidad.
           </p>
 
           {releaseNotes && !downloadedPath && (

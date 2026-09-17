@@ -1,0 +1,6 @@
+services:
+  deps:
+    image: ember-motion-studio-deps
+    build:
+      context: .
+      dockerfile: Dockerfile

@@ -1,7 +1,7 @@
-# Ember Motion Studio — Brand Identity
+# Ember Motion Studio™ — Brand Identity
 
 > Fuente de verdad para el naming, posicionamiento y herencia técnica del producto.  
-> Versión aplicable desde: **v5.9.0**
+> Versión aplicable desde: **v5.9.1**
 
 ---
 
@@ -9,7 +9,7 @@
 
 ### Nombre Comercial Oficial
 ```
-Ember Motion Studio
+Ember Motion Studio™
 ```
 
 | Componente | Origen | Significado |
@@ -23,7 +23,7 @@ Ember Motion Studio
 | Contexto | Forma | Ejemplo de uso |
 |---|---|---|
 | Casual / conversacional | **Ember** | "Lo hice en Ember" |
-| Técnico / oficial | **Ember Motion Studio** | "Exportado desde Ember Motion Studio v6.0.0" |
+| Técnico / oficial | **Ember Motion Studio™** | "Exportado desde Ember Motion Studio™ v6.0.0" |
 | Sigla interna (no promover) | **EMS** | Solo para uso en código/configs internos |
 
 > ⚠ **No promover EMS como marca.** El acrónimo está saturado (Electrical Muscle Stimulation, Emergency Medical Services). El producto se referencia siempre por su nombre completo o por "Ember".
@@ -32,7 +32,7 @@ Ember Motion Studio
 
 ## 2. Qué Reemplaza
 
-**Ember Motion Studio** reemplaza el nombre comercial anterior:
+**Ember Motion Studio™** reemplaza el nombre comercial anterior:
 
 ```
 DVGE — DVGE (Dynamic Vector Graphics Engine) Runtime Bridge
@@ -60,12 +60,12 @@ Este es el patrón de la industria:
 | Google Chrome | Chromium / Blink |
 | DaVinci Resolve | Fusion Engine |
 | Unreal Engine (juego X) | UE5 |
-| **Ember Motion Studio** | **DVGE (Dynamic Vector Graphics Engine) Runtime Bridge** |
+| **Ember Motion Studio™** | **DVGE (Dynamic Vector Graphics Engine) Runtime Bridge** |
 
 ### Dónde vive DVGE técnicamente
 
 ```
-Ember Motion Studio (la app, lo que ve el usuario)
+Ember Motion Studio™ (la app, lo que ve el usuario)
 └── Powered by DVGE (el engine interno)
     ├── dvEngine.register()       ← API de plugins
     ├── @dv-prop                  ← Sintaxis del Inspector
@@ -76,7 +76,7 @@ Ember Motion Studio (la app, lo que ve el usuario)
 
 ### Frase oficial de referencia técnica
 
-> *"Ember Motion Studio, powered by DVGE."*
+> *"Ember Motion Studio™, powered by DVGE."*
 
 ---
 
@@ -96,7 +96,7 @@ Ember Motion Studio (la app, lo que ve el usuario)
 ## 5. Arquitectura de Naming del Ecosistema
 
 ```
-Ember Motion Studio          ← Producto (marca)
+Ember Motion Studio™          ← Producto (marca)
 ├── System Plugins           ← Runtimes de renderizado
 │   ├── dvge-runtime-remotion    (default, v6)
 │   ├── dvge-runtime-hyperframes (próximo)
@@ -126,7 +126,7 @@ El nombre *emerge* del design system. No es una decisión arbitraria.
 ## 7. Guía de Uso de la Marca
 
 ### ✅ Correcto
-- "Ember Motion Studio"
+- "Ember Motion Studio™"
 - "Ember" (casual)
 - "Powered by DVGE"
 - "dvEngine" (referencia técnica al core)
@@ -149,3 +149,12 @@ El nombre *emerge* del design system. No es una decisión arbitraria.
 | Acento principal | `#E44C30` |
 | Autor | Jonatan Barón |
 | Fecha de decisión | 2026-05-01 |
+
+---
+
+## 9. Estado de la Marca (2026-09)
+
+- **"Ember Motion Studio™" se usa como marca no registrada reivindicada (™)** de Jonatan Barón. No existe registro de marca otorgado.
+- La ™ **no constituye** un registro, no otorga derechos exclusivos registrados y **no garantiza** protección frente a uso de terceros o demandas.
+- La marca es **distinta del copyright**: el código está bajo Licencia MIT (copyright © 2026 Jonatan Barón); la marca no se cede con la licencia. Ver `docs/legal/LEGAL.md` y `app/LEGAL.md`.
+- El uso del nombre comercial en productos derivados (forks) puede requerir autorización del titular de la marca, con independencia de la licencia MIT del código.

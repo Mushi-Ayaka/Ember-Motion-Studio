@@ -1,88 +1,70 @@
-# Política de Ecosistema y Plugins — Ember Motion Studio / DVGE
+# Política de Ecosistema y Plugins — Ember Motion Studio™ / DVGE
 
-*Fecha de vigencia: 2026 | Aplica a Ember Motion Studio v5.9.0+*
+*Fecha de vigencia: 2026 | Aplica a Ember Motion Studio™ v5.9.1+*
 
-Esta política regula el desarrollo, distribución y propiedad de las extensiones y complementos (en adelante "Plugins") para el ecosistema de **Ember Motion Studio** y el **DVGE (Dynamic Vector Graphics Engine) Runtime Bridge**.
+Esta política regula el desarrollo, distribución y uso de los complementos (en adelante "Plugins") dentro del ecosistema de **Ember Motion Studio™** y el motor **DVGE (Dynamic Vector Graphics Engine)**.
 
----
+## 1. Responsabilidad y Auditoría de IA
 
-## 1. Clasificación de Plugins
+Con el **AI Context Builder**, Ember facilita la generación de código mediante inteligencia artificial. El usuario reconoce y acepta que:
 
-Existen dos categorías de plugins dentro del ecosistema:
+- El código generado por la IA es responsabilidad exclusiva del usuario.
+- Ember Motion Studio™ no garantiza que el código generado sea seguro, óptimo o libre de errores.
+- Se recomienda encarecidamente auditar el código fuente antes de su ejecución, especialmente en entornos de producción.
 
-### 1.1 Plugins para el DVGE Runtime Bridge (MIT)
+## 2. Propiedad Intelectual de los Plugins
 
-Los plugins que extienden únicamente el motor open-source **DVGE Runtime Bridge** y se distribuyen de forma independiente pueden licenciarse libremente bajo MIT u otra licencia de código abierto compatible, siempre que:
+- Los plugins que usted desarrolle para su propio uso le pertenecen. **No hay cesión de derechos** por el hecho de usar Ember Motion Studio™ o contribuir al catálogo.
+- Los plugins publicados en el **catálogo oficial** son proyectos independientes; cada autor conserva el copyright de su plugin y elige su licencia (se recomienda MIT para el catálogo oficial).
+- El código propio de Ember Motion Studio™ (puente DVGE e interfaz) es copyright de **Jonatan Barón** bajo licencia MIT; los componentes de terceros, incluido Remotion, conservan sus propias licencias y términos; la marca "Ember Motion Studio™" no se cede. Consulte [LEGAL.md](LEGAL.md).
 
-- No incluyan componentes propietarios de Ember Motion Studio.
-- No reproduzcan, importen ni reempaqueten el código fuente propietario de Ember Motion Studio.
+## 3. Seguridad y Sandbox
 
-### 1.2 Plugins para el Ecosistema Oficial de Ember Motion Studio
+Ember Motion Studio™ implementa un Sandbox (Shadow DOM + proxy `fakeWindow`) como capa de contención para el sistema host. Conforme a esta política, los plugins **no deben**:
 
-Los plugins que se integran con las APIs internas o el catálogo oficial de **Ember Motion Studio** están sujetos a esta política completa.
+- Intentar eludir deliberadamente el aislamiento del Sandbox.
+- Realizar telemetría no autorizada o enviar datos locales a servidores externos sin el consentimiento explícito del usuario.
+- Incluir código malicioso u ofuscado diseñado para evadir la auditoría del motor.
 
----
+Estas reglas son condiciones de uso del ecosistema y del catálogo oficial; **no añaden restricciones a la Licencia MIT del software**: quien distribuye copias de Ember Motion Studio™ bajo MIT no asume obligaciones más allá del aviso de copyright y permiso.
 
-## 2. Propiedad Intelectual de los Plugins Oficiales
+> **Nota**: el Sandbox reduce riesgos y previene colisiones de estilos, pero **no garantiza seguridad absoluta** frente a código malicioso. Instale plugins de terceros bajo su propio criterio.
 
-A menos que se acuerde lo contrario por escrito, **Jonatan Barón** se reserva la propiedad intelectual y los derechos de explotación de todos los plugins desarrollados para el catálogo oficial de Ember Motion Studio.
+## 4. Responsabilidad de Terceros
 
-Cualquier contribución de terceros al repositorio oficial de plugins implica la cesión de los derechos necesarios para que Jonatan Barón pueda distribuir, modificar y gestionar dichas extensiones como parte integral del producto Ember Motion Studio.
+Ember Motion Studio™ permite la carga de plugins externos al catálogo oficial. **Jonatan Barón no se hace responsable** por daños, pérdida de datos, fallos del sistema o vulnerabilidades causados por plugins de terceros o modificaciones no oficiales del motor. El usuario instala plugins de terceros bajo su propio riesgo.
 
-> **Nota**: Esta cláusula aplica únicamente a los plugins del catálogo oficial. Los plugins personales o privativos que el usuario desarrolle para su uso exclusivo no están sujetos a esta transferencia de derechos.
+## 5. Uso Comercial
 
----
+- El uso comercial de Ember Motion Studio™ y su motor está permitido bajo la Licencia MIT: puede vender, sublicenciar y distribuir copias cumpliendo el aviso de copyright.
+- Los plugins del catálogo oficial pueden tener sus propias licencias definidas por cada autor.
+- La marca "Ember Motion Studio™" no se cede; véase [LEGAL.md](LEGAL.md).
 
-## 3. Responsabilidad de Terceros
+## 6. Código de Conducta
 
-Ember Motion Studio permite la carga de plugins externos al catálogo oficial. **Jonatan Barón no se hace responsable** por daños, pérdida de datos, fallos en el sistema o vulnerabilidades de seguridad causados por plugins desarrollados por terceros o modificaciones no oficiales del motor.
+Conforme a esta política, los plugins **no deben**:
 
-El usuario carga e instala plugins de terceros bajo su propio riesgo y responsabilidad.
+- Contener código malicioso, virus, ransomware o cualquier forma de malware.
+- Realizar telemetría no autorizada o recopilar datos sin consentimiento explícito.
+- Comprometer la seguridad del sistema anfitrión o interferir con otros procesos del usuario.
+- Infringir derechos de propiedad intelectual de terceros.
 
----
+**Jonatan Barón** se reserva el derecho de retirar del catálogo oficial cualquier plugin que viole estas normas.
 
-## 4. Uso Comercial
+## 7. Proceso de Contribución
 
-- El uso comercial del **DVGE Runtime Bridge** (MIT) está permitido sin restricciones, sujeto a los términos de la Licencia MIT.
-- El desarrollo de plugins comerciales que se integren con las APIs propietarias de **Ember Motion Studio** requiere autorización expresa por escrito de Jonatan Barón.
-- El uso de plugins del ecosistema oficial puede estar sujeto a términos adicionales definidos por el autor para cada plugin específico.
-
----
-
-## 5. Seguridad y Código de Conducta
-
-Queda terminantemente prohibido el desarrollo de plugins que:
-
-- Contengan código malicioso, virus, ransomware o cualquier forma de malware.
-- Realicen telemetría no autorizada, recopilación de datos del usuario o espionaje de actividad.
-- Comprometan la seguridad del sistema anfitrión o interfieran con otros procesos del usuario.
-- Reproduzcan o expongan código fuente propietario de Ember Motion Studio.
-- Infrinjan derechos de propiedad intelectual de terceros.
-
-**Jonatan Barón** se reserva el derecho de:
-
-- Revocar el acceso o eliminar del catálogo oficial cualquier plugin que viole estas normas.
-- Reportar a las autoridades competentes cualquier actividad maliciosa detectada.
-- Exigir responsabilidades legales a los autores de plugins que causen daños a usuarios finales.
-
----
-
-## 6. Proceso de Contribución
-
-Los desarrolladores que deseen contribuir al ecosistema oficial deben:
+Los desarrolladores que deseen contribuir al catálogo oficial deben:
 
 1. Leer y aceptar esta Política de Plugins en su totalidad.
-2. Asegurarse de que su plugin cumple con la [Política de Privacidad](/es/about/privacy/) del ecosistema.
-3. Someter el plugin a revisión de seguridad antes de su publicación en el catálogo oficial.
+2. Incluir una licencia clara en su plugin (MIT recomendado) conservando su copyright.
+3. Evitar telemetría no autorizada y transmisiones de datos sin consentimiento del usuario final.
 
----
+## 8. Contacto
 
-## 7. Contacto
-
-Para consultas sobre desarrollo de plugins, licencias comerciales o reportar plugins que violen esta política:
+Para consultas sobre desarrollo de plugins o reportar plugins que violen esta política:
 
 📧 barojonatan8@gmail.com
 
 ---
 
-*Copyright © 2026 Jonatan Barón. Todos los derechos reservados.*
+*Copyright © 2026 Jonatan Barón. Código bajo Licencia MIT; marca "Ember Motion Studio™" no registrada reivindicada por Jonatan Barón.*

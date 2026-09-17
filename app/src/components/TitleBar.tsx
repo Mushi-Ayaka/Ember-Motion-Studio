@@ -186,7 +186,8 @@ export const TitleBar: React.FC = () => {
       {/* @ts-ignore */}
       <div className="tb-left" style={{ WebkitAppRegion: 'no-drag' }}>
         <div style={{ display: 'flex', alignItems: 'center', marginRight: '16px' }}>
-          <img src="logo.png" alt="" style={{ height: '36px', width: 'auto', transform: 'scale(1.2)', transformOrigin: 'left center' }} />
+          <img src="logo.png" alt="Ember Motion Studio™" style={{ height: '36px', width: 'auto', transform: 'scale(1.2)', transformOrigin: 'left center' }} />
+          <sup aria-hidden="true" style={{ marginLeft: '24px', fontSize: '10px' }}>™</sup>
         </div>
         {!isManual && (
           <div className="tb-menus">

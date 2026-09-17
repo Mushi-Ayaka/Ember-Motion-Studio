@@ -1,4 +1,4 @@
-# Informe de Limpieza — Ember Motion Studio
+# Informe de Limpieza — Ember Motion Studio™
 
 > **Fecha:** 25/05/2026
 > **Ramas:** `main` (v5.9.x), `v5.9-lts`, `v6` (nueva)

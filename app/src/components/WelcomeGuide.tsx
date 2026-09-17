@@ -75,7 +75,7 @@ export const WelcomeGuide: React.FC = () => {
                                 {t('smartscreen_desc')}
                             </p>
                             <button
-                                onClick={() => window.ipcRenderer?.windowOpenExternal?.('https://github.com/Mushi-Ayaka/Dynamic-Vector-Graphics-Engine--DVGE-')}
+                                onClick={() => window.ipcRenderer?.windowOpenExternal?.('https://github.com/Mushi-Ayaka/Ember-Motion-Studio')}
                                 style={{
                                     marginTop: '12px', background: 'transparent', border: '1px solid var(--border-focus)',
                                     color: 'var(--text-secondary)', padding: '6px 12px', borderRadius: '4px', fontSize: '11px', fontWeight: 600,

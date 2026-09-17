@@ -1,8 +1,8 @@
-# User Manual: Ember Motion Studio v5.9.0
+# User Manual: Ember Motion Studio™ v5.9.1
 
 ## The 5-Step Master Workflow
 
-Ember v5.9.0 introduces an optimized workflow to ensure professional results on the first attempt:
+Ember v5.9.1 introduces an optimized workflow to ensure professional results on the first attempt:
 
 1.  **Canvas Configuration**: Set your project's dimensions, duration, and FPS.
 2.  **Artifact Management**: Inject images, videos, or databases (Excel/CSV). It is crucial to add detailed titles and descriptions; this is the information the AI will use to understand how to manipulate each resource.
@@ -45,4 +45,4 @@ The **Ember** rendering engine exports high-fidelity files:
 If the ProRes video appears with a black background: Right-click on the clip -> **Clip Attributes** -> **Alpha Mode** -> **Straight**.
 :::
 
-(Updated for Ember v5.9.0 Stable)
+(Updated for Ember v5.9.1 Stable)

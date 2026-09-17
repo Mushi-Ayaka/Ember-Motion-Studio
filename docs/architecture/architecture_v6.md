@@ -1,8 +1,11 @@
-# Arquitectura y Especificación de Contratos — Ember Motion Studio v6
+# Arquitectura y Especificación de Contratos — Ember Motion Studio™ v6
+
+> [!WARNING]
+> **Estado de este documento (2026-09):** Especificación de visión/roadmap, **no** descripción del sistema vigente. El modelo comercial *Open Core* y los mecanismos PRO que aquí se describen (app comercial privada, `ember-market`, CDN cifrado, licencias Lemon Squeezy, V8 Snapshots) **fueron RETIRADOS**: el código propio del proyecto se distribuye bajo la **Licencia MIT sin restricciones adicionales**; Remotion y otros componentes de terceros conservan sus propias licencias y términos (ver `docs/legal/LEGAL.md`). Se conserva como historia explícitamente retirada y propuesta técnica no implementada; el runtime actual es Remotion con UI React/Electron (no backend C++ alternativo).
 
 ## 1. Visión del Ecosistema y Repositorios
 
-El ecosistema de Ember evoluciona hacia una arquitectura de código distribuido y responsabilidades aisladas. Se estructuran 4 repositorios independientes para optimizar la seguridad, agilizar el desarrollo y permitir un modelo comercial *Open Core*.
+El ecosistema de Ember evoluciona hacia una arquitectura de código distribuido y responsabilidades aisladas. Se estructuran 4 repositorios independientes para optimizar la seguridad, agilizar el desarrollo y permitir un modelo comercial *Open Core* *(planificación retirada — ver aviso superior)*.
 
 ```
                                   [ ECOSISTEMA EMBER v6 ]
@@ -83,7 +86,7 @@ El motor carga y valida estrictamente el archivo de configuración del component
       "name": "title",
       "label": "Texto Principal",
       "type": "string",
-      "default": "Ember Motion Studio"
+      "default": "Ember Motion Studio™"
     },
     {
       "name": "primaryColor",
@@ -99,9 +102,9 @@ El motor carga y valida estrictamente el archivo de configuración del component
 
 ---
 
-## 3. Ember Motion Studio — Capa Comercial (Privado)
+## 3. Ember Motion Studio™ — Capa Comercial (Privado) *(Propuesta no implementada — retirada la parte comercial)*
 
-La aplicación de escritorio (Electron + React + Zustand) representa el editor interactivo y la suite de herramientas premium de producción.
+La aplicación de escritorio (Electron + React + Zustand) representa el editor interactivo y la suite de herramientas premium de producción. *(Vigente como editor; las features "premium" descritas abajo no existen y su monetización fue retirada.)*
 
 ### 3.1 Lienzo Virtual Fluido (Responsive Canvas)
 Se erradica el emulador de pantalla 16:9 con dimensiones estáticas (`baseWidth = 1920` / `baseHeight = 1080`) que forzaba escalas CSS deformando orientaciones de pantalla (e.g., Portrait / Celular).
@@ -137,7 +140,7 @@ Para maximizar el rendimiento y aislar errores, el motor de render nativo no cor
 
 ---
 
-## 4. Ecosistema de Contenido (Registry / Market)
+## 4. Ecosistema de Contenido (Registry / Market) *(Propuesta no implementada)*
 
 ### 4.1 ember-registry (Contenido Gratuito)
 *   **Modelo de Datos**: Catálogo central en un JSON público autohospedado en GitHub.
@@ -214,9 +217,9 @@ Para maximizar el rendimiento y aislar errores, el motor de render nativo no cor
 
 ---
 
-## 6. Seguridad y Protección de Código Comercial
+## 6. Seguridad y Protección de Código Comercial *(Histórico — retirado con el modelo comercial)*
 
-La viabilidad comercial de Ember Motion Studio depende de salvaguardar sus características Pro/Enterprise.
+La viabilidad comercial de Ember Motion Studio™ depende de salvaguardar sus características Pro/Enterprise.
 
 1.  **V8 Snapshots (Electron Kernel)**: La lógica que valida las licencias de Lemon Squeezy y activa las herramientas PRO no viaja como JS plano en el archivo `.asar`. Se compila mediante `mksnapshot` directamente a bytecode binario nativo de V8. Esto evita la ingeniería inversa y el bypass trivial de licencias en la app de escritorio.
 2.  **Validación Asimétrica Offline**: Cuando el usuario activa su licencia en línea, el servidor de validación firma criptográficamente un token local con una clave privada. Si la app inicia sin conexión a internet, el código de validación del V8 Snapshot verifica la validez del token local utilizando una clave pública incrustada.
@@ -227,7 +230,7 @@ La viabilidad comercial de Ember Motion Studio depende de salvaguardar sus carac
 
 ---
 
-## 7. Versionado y Estrategia de Transición
+## 7. Versionado y Estrategia de Transición *(Planificación — sujeto a cambios)*
 
 *   **v5.9 (LTS)**: Declarada versión de Soporte a Largo Plazo. Solo se liberarán parches de seguridad y bugs críticos del motor antiguo. No incorporará capas ni el renderizador C++.
 *   **v6.0 (Beta)**: Incorpora la reestructuración completa. Introduce breaking changes intencionales en el lienzo (erradicación de la caja rígida de 1920x1080) y la adopción del motor multinúcleo en C++.

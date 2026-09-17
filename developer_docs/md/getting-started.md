@@ -1,6 +1,6 @@
 # Empezar rápido
 
-Estos archivos contienen la documentación para desarrolladores de Ember Motion Studio.
+Estos archivos contienen la documentación para desarrolladores de Ember Motion Studio™.
 
 Pasos mínimos para arrancar en desarrollo:
 

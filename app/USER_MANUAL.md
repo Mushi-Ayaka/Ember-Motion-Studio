@@ -1,8 +1,8 @@
-# Manual de Usuario: Ember Motion Studio v5.9.0
+# Manual de Usuario: Ember Motion Studio™ v5.9.1
 
 ## El Flujo de Trabajo en 5 Pasos
 
-Ember v5.9.0 introduce un flujo de trabajo optimizado para garantizar resultados profesionales al primer intento:
+Ember v5.9.1 introduce un flujo de trabajo optimizado para garantizar resultados profesionales al primer intento:
 
 1. **Configuración del Canvas**: Define las dimensiones, duración y FPS de tu proyecto.
 2. **Gestión de Artefactos**: Inyecta imágenes, videos o bases de datos (Excel/CSV). Es crucial añadir títulos y descripciones detalladas; esta es la información que la IA usará para entender cómo manipular cada recurso.

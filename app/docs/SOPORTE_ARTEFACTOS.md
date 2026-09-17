@@ -1,6 +1,6 @@
 # Soporte Técnico de Archivos - Panel de Artefactos (v5.8.0)
 
-Este documento detalla los tipos de archivos soportados, su tratamiento automático y las restricciones vigentes en el panel de **Artefactos** de Ember Motion Studio.
+Este documento detalla los tipos de archivos soportados, su tratamiento automático y las restricciones vigentes en el panel de **Artefactos** de Ember Motion Studio™.
 
 ## 1. Clasificación Automática (vuelo)
 
@@ -39,4 +39,4 @@ El panel de Artefactos es sensible al contexto de lo que se suelta:
 
 ---
 
-### Ember Motion Studio - Engine Technical Specs
+### Ember Motion Studio™ - Engine Technical Specs
