@@ -44,31 +44,9 @@ if (fs.existsSync(winUnpacked)) {
   }
 }
 
-// Empaquetar primero sin editar el ejecutable: evita winCodeSign y sus enlaces
-// simbólicos, que requieren privilegios adicionales en Windows.
-(async () => {
-  console.log('  📦 Packaging win-unpacked...');
-  execSync('npx electron-builder --win --dir', { stdio: 'inherit', cwd: appRoot });
+// Build completo (packaging + NSIS). signAndEditExecutable:false evita que
+// electron-builder intente extraer winCodeSign en entornos sin privilegios.
+console.log('  📦 Building...');
+execSync('npx electron-builder --win nsis', { stdio: 'inherit', cwd: appRoot });
 
-const packagedExe = path.join(winUnpacked, 'Ember Motion Studio.exe');
-const packagedIcon = path.join(releaseDir, '.icon-ico', 'icon.ico');
-
-if (!fs.existsSync(packagedExe) || !fs.existsSync(packagedIcon)) {
-  throw new Error(`Icon post-processing inputs not found: ${packagedExe} / ${packagedIcon}`);
-}
-
-console.log('  🎨 Embedding application icon...');
-const { rcedit } = await import('rcedit');
-await rcedit(packagedExe, { icon: packagedIcon });
-
-console.log('  📦 Building NSIS installer...');
-execSync(`npx electron-builder --win nsis --prepackaged "${winUnpacked}"`, {
-  stdio: 'inherit',
-  cwd: appRoot,
-});
-
-  console.log(`\n✅ Done: ${releaseDir}\n`);
-})().catch((error) => {
-  console.error(error);
-  process.exitCode = 1;
-});
+console.log(`\n✅ Done: ${releaseDir}\n`);
